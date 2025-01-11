@@ -1,10 +1,10 @@
 name: CI
-on: [ workflow_dispath ]
+on: [ workflow_dispatch ]
 jobs:
-   print:
    runs-on: ubuntu-latest
-   steps:
-   - name: print hello
-     run: echo Hello
-   - name: print bye
-     run: echo bye
+   print:
+     steps:
+     - name: print hello
+       run: echo Hello
+     - name: print bye
+       run: echo bye
